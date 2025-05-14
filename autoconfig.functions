@@ -239,6 +239,8 @@ config_language(){
 
   fi
 
+  service_wrapper console-setup restart >>$DEBUG 2>&1 ; eend $?
+
   eoutdent
 }
 # }}}
